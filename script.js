@@ -1,5 +1,12 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav a");
+const contactBtn = document.getElementById("contactBtn");
+
+contactBtn.addEventListener("click", function () {
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
 window.addEventListener("scroll", function () {
     let currentSection = "";
